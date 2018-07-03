@@ -11,6 +11,12 @@
         <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>
 
         <!-- DB schema will be updated if needed -->
-         <property name="hbm2ddl.auto">create-drop</property>
+        <property name="hbm2ddl.auto">create-drop</property>
+        <mapping class="model.Product"/>
+        <mapping class="model.Category"/>
+        <mapping class="model.Order"/>
+        <mapping class="model.StockBalance"/>
+        <mapping class="model.PhotoStore"/>
+        <mapping class="model.ProductQuanity"/>
     </session-factory>
 </hibernate-configuration>
